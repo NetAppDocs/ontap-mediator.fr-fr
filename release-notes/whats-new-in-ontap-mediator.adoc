@@ -1,0 +1,225 @@
+---
+permalink: release-notes/whats-new-in-ontap-mediator.html 
+sidebar: sidebar 
+keywords: 'mediator, new, release, update, install, what"s new' 
+summary: De nouvelles fonctionnalités de ONTAP Mediator sont incluses dans chaque version. 
+---
+= Nouveautés d'ONTAP Mediator
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Chaque nouvelle version d'ONTAP Mediator apporte de nouvelles améliorations.
+
+
+NOTE: Pour plus d'informations sur les versions du système d'exploitation et de SCST, consultez le link:support-matrix.html["Matrice de support"].
+
+[cols="25,75"]
+|===
+
+
+| Version ONTAP Mediator | Améliorations 
+
+
+ a| 
+1.12.1
+ a| 
+* Prise en charge de RHEL :
++
+** Compatible : 10.1 et 9.7.
+** Recommandé : 10.2, 10.0, 9.8, 9.6, 9.4 et 8.10.
+
+
+* Prise en charge de Rocky Linux 10.2, 9.8 et 8.10.
+* Prise en charge d'Oracle Linux 10.1 et 9.8 avec les noyaux rhck et uek.
+* À partir d'ONTAP Mediator 1.12.1 et ONTAP 9.19.1, une seule instance d'ONTAP Mediator configurée avec HTTPS peut surveiller simultanément les configurations suivantes :
++
+** Un maximum de dix configurations IP MetroCluster à quatre nœuds ou cinq à huit nœuds si elles sont installées sur un hôte doté d'un processeur à 8 cœurs et d'au moins 16 Go de RAM. Voir link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediator_requirements.html#mediator-multiple-mccip["Utilisez ONTAP Mediator pour surveiller plusieurs configurations IP MetroCluster"^].
+** Une configuration IP MetroCluster à quatre nœuds et une relation de synchronisation active entre pairs SnapMirror si elle est installée sur un hôte doté d’un processeur à 2 cœurs. Voir link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html#ontap-mediator["Configurez ONTAP Mediator pour la synchronisation active SnapMirror"^].
+
+
+* Inclut un nouvel outil pour réparer une installation SCST défectueuse. Après l'installation d'ONTAP Mediator, vous pouvez trouver l'outil à  `/usr/local/bin/mediator_repair_scst`. Vous pouvez utiliser l'outil après une mise à niveau du système d'exploitation, si le système d'exploitation mis à niveau requiert un correctif SCST qui n'est pas disponible dans le package SCST par défaut.
+
+
+
+
+ a| 
+1,12
+ a| 
+* Prise en charge de RHEL :
++
+** Compatible : 10.1 et 9.7.
+** Recommandé : 10.2, 10.0, 9.8, 9.6, 9.4 et 8.10.
+
+
+* Prise en charge de Rocky Linux 10.2, 9.8 et 8.10.
+* Prise en charge d'Oracle Linux 10.1 et 9.7 avec les noyaux rhck et uek.
+* À partir d'ONTAP 9.19.1 et ONTAP Mediator 1.12, vous pouvez configurer un ONTAP Mediator qui utilise HTTPS pour la communication dans les configurations IP MetroCluster. HTTPS offre une sécurité accrue en chiffrant l'intégralité des sessions à l'aide de SSL/TLS. Vous pouvez choisir d'installer ONTAP Mediator avec la prise en charge de HTTPS uniquement. Le package SCST n'est pas installé si cette méthode d'installation est utilisée. link:../install/prepare-install.html#https-iscsi-installation["En savoir plus sur les options d'installation HTTPS et iSCSI pour ONTAP Mediator"].
+
+
+
+
+ a| 
+1,11
+ a| 
+* Prise en charge de RHEL 10.1, 10.0, 9.7, 9.6, 9.4 et 8.10.
+* Prise en charge de Rocky Linux 10.1, 9.7 et 8.10.
+* Prise en charge d'Oracle Linux 10.0 et 9.6 avec les noyaux rhck et uek.
+* Ajoute la prise en charge d'IPv6 pour les configurations IP MetroCluster.
+* Ajoute la prise en charge de fapolicyd.
+
+
+
+
+ a| 
+1,10
+ a| 
+* Prise en charge de RHEL 10.0, 9.6, 9.4 et 8.10.
+* Prise en charge de Rocky Linux 10.0, 9.6 et 8.10.
+* Met à jour la version Python de base de Python 3.9 à Python 3.12.
+
+
+
+
+ a| 
+1.9.1
+ a| 
+* Prise en charge de RHEL :
++
+** Compatible : 9.3, 9.1, 8.9, 8.7, 8.6, 8.5 et 8.4.
+** Recommandé : 9.5, 9.4, 9.2, 9.0, 8.10 et 8.8.
+
+
+* Prise en charge de Rocky Linux 9.5 et 8.10.
+* Ajoute de nouveaux certificats pour la vérification de signature de code.
+* Ajout de la prise en charge du saut des vérifications de signature de code à l’aide de l’indicateur  `-skip-code-signature-check`.
+* Le programme d'installation affiche des avertissements lorsqu'il détecte des certificats de signature de code expirés.
+
+
+
+
+ a| 
+1,9
+ a| 
+* Prise en charge de RHEL :
++
+** Compatible : 9.3, 9.1, 8.9, 8.7, 8.6, 8.5 et 8.4.
+** Recommandé : 9.5, 9.4, 9.2, 9.0, 8.10 et 8.8.
+
+
+* Prise en charge de Rocky Linux 9.5 et 8.10.
+* Prise en charge FIPS pour RHEL et Rocky Linux.
+* Ajout d’améliorations des performances pour une plus grande évolutivité.
+* Amélioration des noms de fichiers afin de simplifier la configuration des certificats signés par une infrastructure à clés publiques (PKI).
+
+
+
+
+ a| 
+1,8
+ a| 
+* Prise en charge de RHEL :
++
+** Compatible : 8.7, 8.6, 8.5 et 8.4.
+** Recommandé: 9.4, 9.3, 9.2, 9.1, 9.0, 8.10, 8.9 et 8.8.
+
+
+* Prise en charge de Rocky Linux 9.4 et 8.10.
+
+
+
+
+ a| 
+1,7
+ a| 
+* Prise en charge de RHEL :
++
+** Compatible : 8.7, 8.6, 8.5 et 8.4.
+** Recommandé : 9.3, 9.2, 9.1, 9.0, 8.9 et 8.8.
+
+
+* Prise en charge de Rocky Linux 9.3 et 8.9.
+* Prise en charge des données SAN (Subject Alternative Name) dans les certificats auto-signés et les certificats signés par un tiers.
+
+
+
+
+ a| 
+1,6
+ a| 
+* Mises à jour de Python 3.9.
+* Prise en charge de RHEL :
++
+** Compatible : 8.7, 8.6, 8.5 et 8.4.
+** Recommandé: 9.2, 9.1, 9.0 et 8.8.
+
+
+* Prise en charge de Rocky Linux 9.2 et 8.8.
+* Fin du support pour RHEL 7.x / CentOS toutes les versions.
+
+
+
+
+ a| 
+1,5
+ a| 
+* Prise en charge de RHEL 8.5, 8.4, 8.3, 8.2, 8.1, 8.0, 7.9, 7.8, 7.7 et 7.6.
+* Prise en charge de CentOS 7.9, 7.8, 7.7 et 7.6.
+* Inclut des avertissements de dépréciation pour RHEL 7.x / CentOS 7.x.
+* Optimise la vitesse pour les systèmes de synchronisation active SnapMirror à grande échelle.
+* Une signature de code cryptographique a été ajoutée au programme d'installation.
+
+
+
+
+ a| 
+1,4
+ a| 
+* Prise en charge de RHEL 8.5, 8.4, 8.3, 8.2, 8.1, 8.0, 7.9, 7.8, 7.7 et 7.6.
+* Prise en charge de CentOS 7.9, 7.8, 7.7 et 7.6.
+* Ajout de la prise en charge du démarrage sécurisé (SB) du firmware basé sur UFEI.
+
+
+
+
+ a| 
+1,3
+ a| 
+* Prise en charge de RHEL 8.3, 8.2, 8.1, 8.0, 7.9, 7.8, 7.7 et 7.6.
+* Prise en charge de CentOS 7.9, 7.8, 7.7 et 7.6.
+
+
+
+
+ a| 
+1,2
+ a| 
+* Prise en charge de RHEL 8.1, 8.0, 7.9, 7.8, 7.7 et 7.6.
+* Prise en charge de CentOS 7.9, 7.8, 7.7 et 7.6.
+* Prise en charge des boîtes aux lettres HTTPs.
+* À utiliser avec ONTAP 9.8+ MCC-IP AUSO et la synchronisation active SnapMirror ZRTO.
+
+
+
+
+ a| 
+1,1
+ a| 
+* Prise en charge de RHEL 8.0 et 7.6.
+* Prise en charge de CentOS 7.6.
+* Élimine les dépendances à Perl.
+
+
+
+
+ a| 
+1,0
+ a| 
+* Prise en charge des boîtes aux lettres iSCSI.
+* À utiliser avec ONTAP 9.7+ MCC-IP AUSO.
+* Prise en charge de RHEL/CentOS 7.6.
+
+
+|===

@@ -1,0 +1,33 @@
+---
+permalink: quick-start.html 
+sidebar: sidebar 
+keywords: ONTAP, mediator, install, download, package 
+summary: Découvrez ONTAP Mediator. 
+---
+= Démarrage rapide pour ONTAP Mediator
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pour commencer à utiliser ONTAP Mediator, vous installez le logiciel et le configurez pour qu'il fonctionne avec votre environnement ONTAP.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Un"] Installer ONTAP Mediator
+[role="quick-margin-para"]
+link:install/workflow-summary.html["Installer ONTAP Mediator"] sur votre système et assurez-vous que toutes les dépendances requises sont satisfaites.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Vérifiez l’installation d’ONTAP Mediator
+[role="quick-margin-para"]
+link:install/verify-install-task.html["Vérifiez que l’installation de ONTAP Mediator a réussi"] en vérifiant l'état du service et en consultant les journaux pour détecter toute erreur ou tout avertissement.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Configurez ONTAP Mediator pour votre environnement ONTAP
+[role="quick-margin-para"]
+Selon que vous souhaitez link:use-mediator-snapmirror-metrocluster-task.html["Utilisez ONTAP Mediator pour MetroCluster IP, SnapMirror active sync, ou les deux"], suivez les étapes de configuration appropriées pour vous assurer que tous les paramètres nécessaires sont correctement appliqués.
+
+
+
+[[whats-next]]
+== Et ensuite ?
+
+Vous pouvez désormais utiliser ONTAP Mediator pour surveiller les configurations IP de MetroCluster, les configurations de synchronisation active de SnapMirror, ou les deux. Pour plus d'informations, consultez link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/index.html["Documentation de SnapMirror active sync"^] et link:https://docs.netapp.com/us-en/ontap-metrocluster/index.html["Documentation MetroCluster"^].

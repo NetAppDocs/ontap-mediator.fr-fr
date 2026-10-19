@@ -1,0 +1,43 @@
+---
+indexpage:
+  title: Documentation du médiateur ONTAP
+  summary: ONTAP Mediator prend en charge les fonctionnalités ONTAP en fournissant
+    un stockage persistant et isolé pour les métadonnées de haute disponibilité (HA),
+    une fonctionnalité de requête synchrone de l’état des nœuds pour faciliter la
+    détermination du quorum, et en servant de proxy ping pour la disponibilité du
+    contrôleur.
+  keywords: mediator, ONTAP, high-availability, HA, metadata, quorum, controller,
+    liveliness, smbc, metrocluster, snapmirrror active sync
+  lead: ONTAP Mediator prend en charge la synchronisation active SnapMirror et MetroCluster
+    IP en fournissant un stockage persistant et isolé pour les métadonnées de haute
+    disponibilité (HA), une fonctionnalité de requête synchrone de l'état des nœuds
+    pour faciliter la détermination du quorum, et en servant de proxy ping pour la
+    réactivité du contrôleur.
+  tiles:
+  - title: Commencer
+    links:
+    - title: Découvrez ONTAP Mediator
+      url: "/learn-about.html"
+    - title: Démarrage rapide
+      url: "/quick-start.html"
+    - title: Notes de version
+      url: "/release-notes/whats-new-in-ontap-mediator.html"
+  - title: Installer, mettre à niveau et configurer
+    links:
+    - title: Installer ONTAP Mediator
+      url: "/install/workflow-summary.html"
+    - title: Mettre à niveau ONTAP Mediator
+      url: "/administer/upgrade-ontap-mediator-task.html"
+    - title: Utilisez ONTAP Mediator pour la synchronisation active de SnapMirror
+        et MetroCluster IP
+      url: "/use-mediator-snapmirror-metrocluster-task.html"
+  - title: Ressources supplémentaires
+    links:
+    - title: Documentation ONTAP 9
+      url: https://docs.netapp.com/us-en/ontap/
+    - title: Documentation MetroCluster
+      url: https://docs.netapp.com/us-en/ontap-metrocluster/
+    - title: Référence de l'API REST ONTAP
+      url: https://docs.netapp.com/us-en/ontap-restapi/
+    - title: Référence de l'interface de ligne de commande ONTAP
+      url: https://docs.netapp.com/us-en/ontap-cli/

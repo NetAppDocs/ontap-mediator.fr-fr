@@ -1,0 +1,1246 @@
+---
+permalink: release-notes/support-matrix.html 
+sidebar: sidebar 
+keywords: mediator, support matrix, OS support, SCST support, release notes 
+summary: 'Informations relatives au système d"exploitation et à la prise en charge de SCST pour ONTAP Mediator.' 
+---
+= Matrice de prise en charge d’ONTAP Mediator
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La matrice de compatibilité d'ONTAP Mediator inclut des informations sur la prise en charge des systèmes d'exploitation et des versions de SCST.
+
+
+
+[[os-support-matrix]]
+== Matrice de prise en charge des systèmes d'exploitation
+
+Le tableau suivant répertorie les systèmes d'exploitation pris en charge pour chaque version d'ONTAP Mediator.
+
+|===
+
+
+| Système d'exploitation pour ONTAP Mediator | 1.12.1 | 1,12 | 1,11 | 1,10 | 1.9.1 | 1,9 | 1,8 | 1,7 | 1,6 | 1,5 | 1,4 | 1,3 | 1,2 | 1,1 | 1,0 
+
+
+ a| 
+RHEL 10,2
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 10,1
+ a| 
+Compatible
+ a| 
+Compatible
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 10,0
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 9,8
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 9,7
+ a| 
+Compatible
+ a| 
+Compatible
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 9,6
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 9,5
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 9,4
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 9,3
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 9,2
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 9,1
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 9,0
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 8,10
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 8,9
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Compatible
+ a| 
+Compatible
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 8,8
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 8,7
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Compatible
+ a| 
+Compatible
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 8,6
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Compatible
+ a| 
+Compatible
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 8,5
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Compatible
+ a| 
+Compatible
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 8,4
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Compatible
+ a| 
+Compatible
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 8,3
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 8,2
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 8,1
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL 8,0
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+
+
+
+ a| 
+RHEL et CentOS 7.9
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Compatible
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL et CentOS 7.8
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL et CentOS 7.7
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+RHEL et CentOS 7.6
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Obsolète
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui
+ a| 
+Oui (RHEL uniquement)
+
+
+
+ a| 
+CentOS 8 et stream
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+S/O
+ a| 
+S/O
+ a| 
+S/O
+
+
+
+ a| 
+Rocky Linux 10
+ a| 
+Oui (10.2)
+ a| 
+Oui (10.2)
+ a| 
+Oui (10.0 et 10.1)
+ a| 
+Oui
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+Rocky Linux 9
+ a| 
+Oui (9.8)
+ a| 
+Oui (9.8)
+ a| 
+Oui (9.7)
+ a| 
+Oui (9.6 et 9.4)
+ a| 
+Oui (9.5)
+ a| 
+Oui (9.5)
+ a| 
+Oui (9.4)
+ a| 
+Oui (9.3)
+ a| 
+Oui (9.2)
+ a| 
+S/O
+ a| 
+S/O
+ a| 
+S/O
+ a| 
+S/O
+ a| 
+S/O
+ a| 
+S/O
+
+
+
+ a| 
+Rocky Linux 8
+ a| 
+Oui (8.10)
+ a| 
+Oui (8.10)
+ a| 
+Oui (8.10)
+ a| 
+Oui (8.10)
+ a| 
+Oui (8.10)
+ a| 
+Oui (8.10)
+ a| 
+Oui (8.10)
+ a| 
+Oui (8.9)
+ a| 
+Oui (8.8)
+ a| 
+S/O
+ a| 
+S/O
+ a| 
+S/O
+ a| 
+S/O
+ a| 
+S/O
+ a| 
+S/O
+
+
+
+ a| 
+Oracle Linux 10
+ a| 
+Oui (10.1)
+ a| 
+Oui (10.1)
+ a| 
+Oui (10.0)
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+
+
+ a| 
+Oracle Linux 9
+ a| 
+Oui (9.8)
+ a| 
+Oui (9.7)
+ a| 
+Oui (9.6)
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+ a| 
+Non
+
+|===
+* « Oui » signifie que le système d’exploitation est recommandé pour l’installation d’ONTAP Mediator et qu’il est entièrement compatible et pris en charge.
+* « Non » signifie que le système d’exploitation et ONTAP Mediator ne sont pas compatibles.
+* « Compatible » signifie que Red Hat ne prend plus en charge ces versions de RHEL, mais ONTAP Mediator peut toujours y être installé.
+* ONTAP Mediator 1.6 ajoute la prise en charge de Rocky Linux 9 et 8.
+* ONTAP Mediator 1.5 était la dernière version prise en charge pour les systèmes d'exploitation de la branche RHEL 7.x.
+* Centos 8 a été retiré de toutes les versions en raison de sa réorganisation des branches. Centos Stream a été jugé inadapté à une utilisation en production. Aucun support n'est prévu.
+
+
+
+
+[[scst-support-matrix]]
+== Matrice de prise en charge SCST
+
+Le tableau suivant présente la version SCST prise en charge pour chaque version d'ONTAP Mediator.
+
+[cols="2*"]
+|===
+| Version ONTAP Mediator | Version SCST prise en charge 
+
+
+| ONTAP Mediator 1.12.1 | scst-3.10.tar.gz 
+
+
+| ONTAP Mediator 1.12 | scst-3.10.tar.gz 
+
+
+| ONTAP Mediator 1.11 | scst-3.9.tar.gz 
+
+
+| ONTAP Mediator 1.10 | scst-3.9.tar.gz 
+
+
+| ONTAP Mediator 1.9.1 | scst-3.8.0.tar.bz2 
+
+
+| ONTAP Mediator 1.9 | scst-3.8.0.tar.bz2 
+
+
+| ONTAP Mediator 1.8 | scst-3.8.0.tar.bz2 
+
+
+| ONTAP Mediator 1.7 | scst-3.7.0.tar.bz2 
+
+
+| ONTAP Mediator 1.6 | scst-3.7.0.tar.bz2 
+
+
+| ONTAP Mediator 1.5 | scst-3.6.0.tar.bz2 
+
+
+| ONTAP Mediator 1.4 | scst-3.6.0.tar.bz2 
+
+
+| ONTAP Mediator 1.3 | scst-3.5.0.tar.bz2 
+
+
+| ONTAP Mediator 1.2 | scst-3.4.0.tar.bz2 
+
+
+| ONTAP Mediator 1.1 | scst-3.4.0.tar.bz2 
+
+
+| ONTAP Mediator 1.0 | scst-3.3.0.tar.bz2 
+|===

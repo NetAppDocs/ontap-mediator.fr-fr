@@ -1,0 +1,50 @@
+---
+permalink: use-mediator-snapmirror-metrocluster-task.html 
+sidebar: sidebar 
+keywords: ONTAP, mediator, SnapMirror active sync, MetroCluster IP, quorum witness, MAUSO 
+summary: Découvrez comment ONTAP Mediator surveille les relations SnapMirror active sync et les configurations IP MetroCluster, et combien d’éléments de chaque type une seule instance peut surveiller simultanément. 
+---
+= Utilisez ONTAP Mediator pour la synchronisation active de SnapMirror et MetroCluster IP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP Mediator s'exécute sur un hôte Linux dans un troisième domaine de défaillance, distinct de vos clusters ONTAP, où il fournit un stockage persistant et isolé pour les métadonnées de haute disponibilité (HA). ONTAP utilise ce stockage, ainsi que les fonctions de requête d'état des nœuds et de proxy de ping de Mediator, pour surveiller les relations de synchronisation active SnapMirror et les configurations IP MetroCluster.
+
+
+NOTE: Cette documentation concerne la version sur site d'ONTAP Mediator. Pour plus d'informations sur ONTAP Cloud Mediator, disponible à partir d'ONTAP 9.17.1, consultez link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/index.html["Documentation de SnapMirror active sync"^].
+
+
+
+[[monitor-snapmirror-active-sync-relationships]]
+== Surveiller les relations de synchronisation active de SnapMirror
+
+SnapMirror active sync utilise ONTAP Mediator comme témoin passif pour les copies principale et miroir dans un groupe de cohérence. En cas de partitionnement du réseau ou si une copie devient indisponible, SnapMirror active sync interroge ONTAP Mediator pour déterminer quelle copie continue de traiter les E/S et interrompt les E/S sur l'autre copie.
+
+À partir d'ONTAP 9.8, vous pouvez utiliser n'importe quelle version d'ONTAP Mediator pour surveiller une relation de synchronisation active SnapMirror.
+
+
+NOTE: Pour connaître les limites du nombre de paires de clusters SnapMirror active sync qu'une seule instance ONTAP Mediator peut surveiller, voir link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/limits-reference.html["Limites d'objets pour la synchronisation active ONTAP SnapMirror"^].
+
+link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html["Configurez ONTAP Mediator pour la synchronisation active SnapMirror"^]
+
+
+
+[[monitor-metrocluster-ip-configurations]]
+== Surveiller MetroCluster les configurations IP
+
+Dans une configuration IP MetroCluster, ONTAP Mediator stocke des informations d'état sur les nœuds MetroCluster dans des LUN de boîte aux lettres et aide les nœuds à effectuer un basculement automatique non planifié assisté par Mediator (MAUSO) en cas de catastrophe ou dans des scénarios de panne spécifiques.
+
+À partir de ONTAP 9.19.1 et de ONTAP Mediator 1.12, vous pouvez configurer un ONTAP Mediator qui utilise HTTPS pour la communication afin de surveiller votre configuration IP MetroCluster. Lorsque vous configurez ONTAP Mediator avec le protocole iSCSI, vous pouvez utiliser n'importe quelle version de ONTAP Mediator pour surveiller une configuration IP MetroCluster.
+
+
+NOTE: Pour connaître les limites du nombre de configurations IP MetroCluster qu’une seule instance ONTAP Mediator peut surveiller, consultez link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediator_requirements.html#mediator-multiple-mccip["Utilisez ONTAP Mediator pour surveiller plusieurs configurations IP MetroCluster"^]
+
+link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_mediator_requirements.html["Configurer ONTAP Mediator pour une configuration MetroCluster IP"^]
+
+.Informations connexes
+* link:https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/architecture-concept.html["Architecture de synchronisation active ONTAP SnapMirror"^]
+* link:https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept-ontap-mediator-supports-automatic-unplanned-switchover.html["Découvrez la prise en charge par ONTAP Mediator du basculement automatique non planifié dans une configuration IP MetroCluster"^]
+

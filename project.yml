@@ -66,6 +66,8 @@ sidebar:
         url: "/administer/regenerate-self-signed-certificate-task.html"
       - title: Remplacez les certificats auto-signés par des certificats de confiance
         url: "/administer/replace-self-signed-certificates-task.html"
+      - title: Passer au nom commun de l’ancien certificat CA
+        url: "/administer/switch-ca-certificate-naming-task.html"
       - title: Résoudre les problèmes liés aux certificats
         url: "/administer/troubleshoot-certificate-issues-task.html"
     - title: Maintenance du système d'exploitation hôte

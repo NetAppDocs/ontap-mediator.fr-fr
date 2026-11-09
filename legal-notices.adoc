@@ -57,6 +57,7 @@ Les fichiers de notification fournissent des informations sur les droits d'auteu
 [[ontap-mediator-for-metrocluster-ip-and-snapmirror-active-sync]]
 == ONTAP Mediator pour MetroCluster IP et SnapMirror active sync
 
+* link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3392667["Avis concernant ONTAP Mediator 1.13"^]
 * link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3378665["Avis concernant ONTAP Mediator 1.12.1"^]
 * link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3364866["Avis concernant ONTAP Mediator 1.11"^]
 * link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3351664["Avis concernant ONTAP Mediator 1.10"^]

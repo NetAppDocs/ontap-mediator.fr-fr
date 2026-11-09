@@ -83,6 +83,10 @@ systemctl status mediator-scst
 
 . Veuillez confirmer les ports utilisés par ONTAP Mediator :
 +
+
+NOTE: Pour une installation HTTPS uniquement, seul le port 31784 sera utilisé. Les processus d’écoute sur le port 3260 dans l’exemple ci-dessous s’appliquent lorsque SCST est installé.
+
++
 [source, cli]
 ----
 netstat -anlt | grep -E '3260|31784'

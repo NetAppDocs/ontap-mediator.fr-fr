@@ -18,7 +18,7 @@ Vous pouvez configurer les attributs côté hôte de ONTAP Mediator, y compris l
 [[ontap-mediator-configurable-settings]]
 == Paramètres configurables du médiateur ONTAP
 
-ONTAP Mediator prend en charge plusieurs paramètres configurables. Les valeurs par défaut de ces paramètres sont fournies dans un `low_space_threshold_mib: 10` fichier en lecture seule. Le fichier se trouve à l’emplacement suivant :
+ONTAP Mediator prend en charge plusieurs paramètres configurables. Les valeurs par défaut de ces paramètres sont fournies dans un `ontap_mediator.config.yaml` fichier en lecture seule. Le fichier se trouve à l’emplacement suivant :
 
 `/opt/netapp/lib/ontap_mediator/ontap_mediator/server_config/ontap_mediator.user_config.yaml`
 
